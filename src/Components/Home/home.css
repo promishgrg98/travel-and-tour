@@ -49,7 +49,7 @@
         flex-direction: column;
         align-items: stretch;
         justify-content: center;
-        margin: auto;
+        margin: 150px 0;
         color: var(--whiteColor);
         z-index: 100;
 
@@ -117,10 +117,36 @@
                     margin-left: 10px;
                 }
 
-                .input[type=range]{
+                input[type=range] {
                     background: blue;
                 }
             } 
+
+            .searchOptions {
+                position: absolute;
+                background: var(--gradientColor);
+                width: max-content;
+                bottom: -0.7rem;
+                column-gap: .8rem;
+                padding: 5px 1rem;
+                border-radius: 3rem;
+                left: 50%;
+                transform: translate(-50%);
+                justify-content: center;
+                cursor: pointer;
+
+                &:hover {
+                    background: var(--PrimaryColor);
+                }
+
+                .icon {
+                    font-size: 18px;
+                }
+
+                span {
+                    font-size: 13px;
+                }
+            }
         }
     }
 }
