@@ -1,73 +1,79 @@
 import React from 'react';
 import './main.css';
-import img from '../../Assets/img1.jpg';
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiOutlineClipboardCheck } from "react-icons/hi";
+import img1 from '../../Assets/img1.jpg';
+import img2 from '../../Assets/img2.jpg';
+import img3 from '../../Assets/img3.jpg';
+import img4 from '../../Assets/img4.jpg';
+import img5 from '../../Assets/img5.jpg';
+import img6 from '../../Assets/img6.jpg';
+import img7 from '../../Assets/img7.jpg';
 
 const Data = [
     {
         id: 1,
-        imgSrc: img,
+        imgSrc: img1,
         destTitle: 'Bora Bora',
         location: 'New Zealand',
         grade: 'CULTURAL RELAX',
         fees: '$700',
         description: 'The epitome of romance, Bora Bora is one of the best travel destinatons in the World. This place is known for its luxurious stays and adventurous activities.',
     },
-    // {
-    //     id: 2,
-    //     imgSrc: img,
-    //     destTitle: 'Bora Bora',
-    //     location: 'New Zealand',
-    //     grade: 'CULTURAL RELAX',
-    //     fees: '$700',
-    //     description: 'The epitome of romance, Bora Bora is one of the best travel destinatons in the World. This place is known for its luxurious stays and adventurous activities.',
-    // },
-    // {
-    //     id: 3,
-    //     imgSrc: img,
-    //     destTitle: 'Bora Bora',
-    //     location: 'New Zealand',
-    //     grade: 'CULTURAL RELAX',
-    //     fees: '$700',
-    //     description: 'The epitome of romance, Bora Bora is one of the best travel destinatons in the World. This place is known for its luxurious stays and adventurous activities.',
-    // },
-    // {
-    //     id: 4,
-    //     imgSrc: img,
-    //     destTitle: 'Bora Bora',
-    //     location: 'New Zealand',
-    //     grade: 'CULTURAL RELAX',
-    //     fees: '$700',
-    //     description: 'The epitome of romance, Bora Bora is one of the best travel destinatons in the World. This place is known for its luxurious stays and adventurous activities.',
-    // },
-    // {
-    //     id: 5,
-    //     imgSrc: img,
-    //     destTitle: 'Bora Bora',
-    //     location: 'New Zealand',
-    //     grade: 'CULTURAL RELAX',
-    //     fees: '$700',
-    //     description: 'The epitome of romance, Bora Bora is one of the best travel destinatons in the World. This place is known for its luxurious stays and adventurous activities.',
-    // },
-    // {
-    //     id: 6,
-    //     imgSrc: img,
-    //     destTitle: 'Bora Bora',
-    //     location: 'New Zealand',
-    //     grade: 'CULTURAL RELAX',
-    //     fees: '$700',
-    //     description: 'The epitome of romance, Bora Bora is one of the best travel destinatons in the World. This place is known for its luxurious stays and adventurous activities.',
-    // },
-    // {
-    //     id: 7,
-    //     imgSrc: img,
-    //     destTitle: 'Bora Bora',
-    //     location: 'New Zealand',
-    //     grade: 'CULTURAL RELAX',
-    //     fees: '$700',
-    //     description: 'The epitome of romance, Bora Bora is one of the best travel destinatons in the World. This place is known for its luxurious stays and adventurous activities.',
-    // },
+    {
+        id: 2,
+        imgSrc: img2,
+        destTitle: 'Bora Bora',
+        location: 'New Zealand',
+        grade: 'CULTURAL RELAX',
+        fees: '$700',
+        description: 'The epitome of romance, Bora Bora is one of the best travel destinatons in the World. This place is known for its luxurious stays and adventurous activities.',
+    },
+    {
+        id: 3,
+        imgSrc: img3,
+        destTitle: 'Bora Bora',
+        location: 'New Zealand',
+        grade: 'CULTURAL RELAX',
+        fees: '$700',
+        description: 'The epitome of romance, Bora Bora is one of the best travel destinatons in the World. This place is known for its luxurious stays and adventurous activities.',
+    },
+    {
+        id: 4,
+        imgSrc: img4,
+        destTitle: 'Bora Bora',
+        location: 'New Zealand',
+        grade: 'CULTURAL RELAX',
+        fees: '$700',
+        description: 'The epitome of romance, Bora Bora is one of the best travel destinatons in the World. This place is known for its luxurious stays and adventurous activities.',
+    },
+    {
+        id: 5,
+        imgSrc: img5,
+        destTitle: 'Bora Bora',
+        location: 'New Zealand',
+        grade: 'CULTURAL RELAX',
+        fees: '$700',
+        description: 'The epitome of romance, Bora Bora is one of the best travel destinatons in the World. This place is known for its luxurious stays and adventurous activities.',
+    },
+    {
+        id: 6,
+        imgSrc: img6,
+        destTitle: 'Bora Bora',
+        location: 'New Zealand',
+        grade: 'CULTURAL RELAX',
+        fees: '$700',
+        description: 'The epitome of romance, Bora Bora is one of the best travel destinatons in the World. This place is known for its luxurious stays and adventurous activities.',
+    },
+    {
+        id: 7,
+        imgSrc: img7,
+        destTitle: 'Bora Bora',
+        location: 'New Zealand',
+        grade: 'CULTURAL RELAX',
+        fees: '$700',
+        description: 'The epitome of romance, Bora Bora is one of the best travel destinatons in the World. This place is known for its luxurious stays and adventurous activities.',
+    },
 ]
 
 function Main() {
