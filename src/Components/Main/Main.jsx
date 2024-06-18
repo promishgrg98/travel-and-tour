@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './main.css';
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiOutlineClipboardCheck } from "react-icons/hi";
@@ -9,6 +9,9 @@ import img4 from '../../Assets/img4.jpg';
 import img5 from '../../Assets/img5.jpg';
 import img6 from '../../Assets/img6.jpg';
 import img7 from '../../Assets/img7.jpg';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Data = [
     {
@@ -77,17 +80,22 @@ const Data = [
 ]
 
 function Main() {
+
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+    }, []);
+
     return (
         <section className='main container section'>
             <div className="secTitle">
-                <h3 className="title">
+                <h3 data-aos='fade-right' className="title">
                     Most visited Destinations
                 </h3>
             </div>
             <div className="secContent grid">
                 {Data.map(({ id, imgSrc, destTitle, location, grade, fees, description }) => {
                     return (
-                        <div key={id} className="singleDestination">
+                        <div key={id} className="singleDestination" data-aos='fade-up'>
 
                             <div className="imageDiv">
                                 <img src={imgSrc} alt={destTitle} />
@@ -98,7 +106,7 @@ function Main() {
                                 <h4 className="destTitle">{destTitle}</h4>
 
                                 <span className="continent flex">
-                                    <HiOutlineLocationMarker className='icon'/>
+                                    <HiOutlineLocationMarker className='icon' />
                                     <span className="name">{location}</span>
                                 </span>
 
@@ -116,7 +124,7 @@ function Main() {
                                 </div>
 
                                 <button className='btn flex'>
-                                    DETAILS <HiOutlineClipboardCheck className='icon'/>
+                                    DETAILS <HiOutlineClipboardCheck className='icon' />
                                 </button>
                             </div>
                         </div>

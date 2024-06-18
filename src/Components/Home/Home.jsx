@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './home.css';
 import video1 from '../../Assets/video1.mp4';
 import { GrLocation } from "react-icons/gr";
@@ -9,7 +9,15 @@ import { FaTripadvisor } from "react-icons/fa";
 import { BsListTask } from "react-icons/bs";
 import { TbApps } from "react-icons/tb";
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 function Home() {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <section className='home'>
       <div className='overlay'></div>
@@ -17,11 +25,15 @@ function Home() {
 
       <div className='homeContent container'>
         <div className='textDiv'>
-          <span className='smallText'>Our Packages</span>
-          <h1 className='homeTitle'>Search your Holiday</h1>
+          <span className='smallText' data-aos='fade-up'>
+            Our Packages
+          </span>
+          <h1 className='homeTitle' data-aos='fade-up'>
+            Search your Holiday
+          </h1>
         </div>
 
-        <div className='cardDiv grid'>
+        <div className='cardDiv grid' data-aos='fade-up'>
           <div className='destinationInput'>
             <label htmlFor='city'>Search your Destination</label>
             <div className='input flex'>
@@ -53,15 +65,15 @@ function Home() {
           </div>
         </div>
 
-        <div className="homeFooterIcons flex">
+        <div className="homeFooterIcons flex" data-aos='fade-up'>
           <div className="rightIcons">
             <FiFacebook className='icon' />
             <FaInstagram className='icon' />
             <FaTripadvisor className='icon' />
           </div>
           <div className="leftIcons">
-            <BsListTask className='icon'/>
-            <TbApps className='icon'/>
+            <BsListTask className='icon' />
+            <TbApps className='icon' />
           </div>
         </div>
       </div>
